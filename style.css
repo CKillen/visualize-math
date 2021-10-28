@@ -1,0 +1,133 @@
+/* 
+Dark -> Light
+#CDBBA7 
+#DAD0C2
+#F4DFD0
+#FDEFEF
+*/
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.sorry-mobile {
+  display: none;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 100px 68px minmax(0, 1fr);
+  overflow: hidden;
+  min-width: 800px;
+}
+
+.main-header {
+  background-color: #CDBBA7;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, .6);
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+.second-header {
+  background-color: #DAD0C2;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .6);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  background-image: linear-gradient(#F4DFD0, #FDEFEF, #F4DFD0);
+  z-index: 2;
+}
+
+.button {
+  position: relative;
+  padding: 1em 1.68em;
+  background-image: none;
+  background-color: #DAD0C2;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 1px 3px black;
+}
+
+.button:hover {
+  position: relative;
+  padding: 1em 1.68em;
+  background-image: linear-gradient(30deg, #DAD0C2, #DAD0C2, #F4DFD0);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 1px 3px black;
+}
+
+.button:active {
+  position: relative;
+  padding: 1em 1.68em;
+  background-image: linear-gradient(30deg, #DAD0C2, #F4DFD0);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, .4); 
+}
+
+.radios {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown {
+  padding: 1em 1.68em;
+  background-image: none;
+  background-color: #CDBBA7;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 1px 3px black;
+  margin-left: 5em;
+}
+
+.dropdown:hover {
+  background-image: linear-gradient(30deg, #CDBBA7, #CDBBA7, #F4DFD0);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  box-shadow: 0px 1px 3px black;
+}
+
+.calculate-button {
+  margin-left: 5em;
+}
+
+@media only screen and (max-width: 799px) {
+  .main {
+    display: none;
+  }
+
+  .sorry-mobile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    overflow: hidden;
+  }
+
+}
+/* 
+Dark -> Light
+#CDBBA7 
+#DAD0C2
+#F4DFD0
+#FDEFEF
+*/

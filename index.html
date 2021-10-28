@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Shortest Path</title>
+</head>
+<body>
+  <div class="main">
+    <div class="main-header">
+      <h1>Visualize Pathing</h1>
+
+      <button class="button">Menu</button>
+
+    </div>  
+    <div class="second-header">
+      <div class="radios">
+        <input type="radio" name="mark" value="start" checked>
+        <label for="start">Start</label>
+        <input type="radio" name="mark" value="finish">
+        <label for="finish">Finish</label>
+        <input type="radio" name="mark" value="wall">
+        <label for="wall">Wall</label>
+        <input type="radio" name="mark" value="erase">
+        <label for="erase">Erase</label>
+      </div>
+    <div>
+      <select class="dropdown">
+        <option class="option" value="1" >BFS</option>
+        <option class="option" value="2" >Pathfinding 2</option>
+        <option class="option" value="3" >Pathfinding 3</option>
+      </select>
+      </div> 
+      <div>
+        <button class="button calculate-button">Calculate</button>
+      </div>
+    </div>
+    <div class="canvas-div">
+      <canvas height="" width="" ></canvas>
+    </div>
+  </div>
+  <div class="sorry-mobile">
+    <h1>Mobile Support planned in the Future!</h1>
+  </div>
+</body>
+<script src="grid.js"></script>
+<script src="path.js"></script>
+<script src="index2.js"></script>
+</html>
